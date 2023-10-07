@@ -1,0 +1,294 @@
+html {
+  height: 100%;
+  width: 100%;
+  
+}
+
+:root{
+
+  
+  
+  font-family: monospace;
+  text-align: justify;
+  --light: #dceddb;
+  --gray: #88958c;
+  --blue: #2b4b58;
+  --noir: #0b232d;
+  --red: #43242c;
+  --black: #0c0f14;
+  background-color:var(--noir);
+  color:var(--light);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  
+}
+
+nav{
+  background-color: var(--light);
+  max-width:80%;
+  padding:1%;
+  position:sticky;
+  top:0px;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    font-family: 'Inconsolata', monospace;
+    display:inline;
+    margin-right:20px;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--black);
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--gray);
+}
+
+
+li {
+  word-wrap: break-word; /* Allow long words to break to the next line */
+  white-space: normal; /* Allow whitespace to wrap as well */
+  overflow: hidden; /* Hide any text that overflows the container */
+  font-size:1.2rem;
+}
+
+h3{
+  font-size:1.5rem;
+}
+.GameplayElems{
+  
+ 
+  display:grid;
+  grid-template: 
+    'Objective Objective Objective' 20%
+    'Survive Uncover Escape' 80%/1fr 1fr 1fr;
+  gap: 10px;
+
+}
+
+.GameplaySquare{
+  
+  
+  background-size:contain;
+  aspect-ratio:1;
+}
+
+.Survive {
+  grid-area: Survive;
+  margin: 1%;
+  background-image:url("../images/IMG_5087.jpg");
+}
+
+.Uncover {
+  grid-area: Uncover;
+  margin: 1%;
+  background-image:url("../images/gucha_a_person_shows_a_face_with_black_eyes_and_a_nose_in_the__f47f92e7-9f0c-47fd-832c-e64cac4d749d.png");
+}
+
+.Escape {
+  grid-area: Escape;
+  margin: 1%;
+  background-image:url("../images/gucha_horror_game_desaturated_abandoned_church_small_Catholic__7087c394-1884-4766-8a86-cc52faae8e00.png");
+}
+
+
+.Objective {
+  grid-area:Objective;
+   margin: 1%;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .GameplayElems{
+  
+    grid-template: 
+    'Objective Objective' 20%
+    'Survive .' 40%
+    'Uncover Escape' 40%/1fr 1fr;
+    
+}
+}
+@media screen and (max-width:  576px) {
+  .GameplayElems{
+  
+    grid-template: 
+    'Objective'10%
+   'Survive'30%
+    'Uncover'30%
+    'Escape' 30%/1fr;
+    
+    
+}
+  
+
+  
+}
+
+
+
+.GameplaySquare2{
+  aspect-ratio:2;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.GameplaySquare2P{
+  
+  aspect-ratio:1;
+  background-size:contain;
+  
+}
+.FlashlightPic
+  {
+    grid-area: FlashlightPic;
+     background-image:url("../images/gucha_realistic_game_incon_of_a_flashlight_that_looks_worn_out_6f894d1a-ba2c-4a4b-a4ef-2ba446eca795.png")
+  }
+.HidePic
+  {
+    grid-area: HidePic;
+     background-image:url("../images/gucha_horror_game_desaturated_abandoned_courtyard_surrounded_b_a88c3958-dfbe-4c2b-a449-9a00bdd60620.png")
+  }
+.RadioPic
+  {
+    grid-area:RadioPic;
+     background-image:url("../images/Gucha_old_notes_d85a5b93-5d72-44f5-b735-4062ec382bfd.png")
+  }
+.Flashlight{
+  grid-area: Flashlight;
+  margin: 1%;
+   /* Add background color here if needed */
+}
+.Hide{
+  grid-area: Hide;
+  margin: 1%;
+  /* Add background color here if needed */
+}
+.Radio{
+  grid-area: Radio;
+  margin: 1%;
+  /* Add background color here if needed */
+}
+.GameplayElems2{
+  
+
+  display:grid;
+  grid-template: 
+      'Objective Objective Objective' 10%
+     'FlashlightPic HidePic RadioPic' 45%
+    'Flashlight Hide Radio' 45%/1fr 1fr 1fr;
+  gap: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .GameplayElems2{
+  
+    grid-template: 
+     'Objective Objective' 12%
+    'FlashlightPic .' 22%
+    'Flashlight Flashlight' 22%
+    'HidePic RadioPic'22%
+    'Hide Radio' 22%/1fr 1fr;
+    
+}
+}
+@media screen and (max-width:  576px) {
+  .GameplayElems2{
+  
+    grid-template: 
+    'Objective'10%
+    'FlashlightPic' 15%
+   'Flashlight'15%
+    'HidePic' 15%
+    'Hide' 15%
+    'RadioPic' 15%
+    'Radio' 15%/1fr;
+    
+}
+
+  
+}
+
+.Notebook{
+  background-image: url(../images/Letter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+}
+  
+.Notebook p{
+  margin:10%;
+  font-family: 'Playfair Display', serif;
+  color:var(--black)
+}
+
+
+@media screen and (min-width: 768px) {
+  .Storyline{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+   
+  gap: 10px;
+
+}
+} 
+.Backstory{
+  grid-column: 1;
+  margin: 1%;
+ 
+}
+
+.Gamestory{
+  grid-column:2;
+  margin: 1%;
+  
+}
+  
+
+ 
+
+
+#Info{
+  padding:20%;
+  background-image:url("../images/gucha_horror_game_desaturated_abandoned_library_crowded_small__e8c19570-0f10-43e4-92c2-d008cb07f399.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  
+
+}
+.Headings{
+  font-family: 'Roboto', sans-serif;
+  font-size:5rem;
+}
+.sub{
+  font-size: 2rem;
+  color:red;
+  margin-left:50%;
+}
+
+#Development{
+  background-image: url(../images/gucha_horror_game_desaturated_abandoned_public_shower_with_man_cc6f32ae-c1cf-4f56-b62e-f219a0efbcc9.png);
+  padding-bottom: 50%;
+  color:var(--light)
+}
+
+#DevelopmentInfo{
+  margin: 5%;
+  padding: 5%;
+  
+}
+
+#DevelopmentInfo h2{
+  font-size:2rem;
+}
+
