@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Playfair+Display:ital@1&family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+ 
 </head>
 
 <body>
@@ -80,6 +81,9 @@ of a past forgotten</h2>
     </div>
     
   </div>
+
+   
+    
   <div class = "Storyline">
       <h2>Storyline</h2>
       <div class = "Notebook Backstory">
@@ -106,6 +110,32 @@ The whereabouts of the staff and the children remain unknown. However, in the ch
       </div>
     
   </div>
+    
+    <!--4.Arrow Top auto scroll to the top button appears after half way through home page!-->
+    <script src="js4.js" defer></script>
+    <div id="arrowTop" hidden></div>
+  <div id = "mysterious">
+
+     <!--1.Question and answer, based on mouse status hide/show the answer!-->
+    <script src="js1.js" defer></script>
+   <p class = "question" id="question"> Why is a Raven like a Writing Desk?</p>
+    <p class="answer hidden" id="answer">Because it can produce a few notes, tho they are very flat; and it is never put with the wrong end in front! </p>
+  </div>
+    <script src="js2.js" defer></script>
+     <!--2.Toggle between text and image based on the mouse status!-->
+  <div id = "imagetext">
+    <p id="textonly">Hover or touch to see a picture of the secret classroom</p>
+    <div class = "hidden" id="imageonly">
+        <img src="static/images/gucha_horror_game_desaturated_abandoned_classroom_dark_in_disa_825a65cd-1a12-4988-a0ce-abcdddd1ae88.png" alt="classroom" width=50%>
+    </div>
+  </div>
+    <script src="js3.js" defer></script>
+    <!--3.Every few seconds, display random color and random spooky message-->
+    
+<div class = "SpookyMessage">
+  <p>Spooky</p>
+</div>
+    
   <div id = "Development">
     <div id="DevelopmentInfo">
     <h2>Development</h2>

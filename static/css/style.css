@@ -292,3 +292,50 @@ h3{
   font-size:2rem;
 }
 
+#mysterious{
+  background-image: url(../images/Gucha_old_notes_d85a5b93-5d72-44f5-b735-4062ec382bfd.png);
+  color:var(--light);
+  font-size: 2rem;
+ padding:20%;
+
+}
+    
+#MagicCard{
+  
+  display:block;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+#imagetext
+{
+  margin:10%;
+  padding:10%;
+  background-color:var(--light);
+  color:var(--noir);
+}
+.hidden
+{
+  display:none;
+}
+
+.SpookyMessage
+{
+  padding:50px;
+}
+
+#arrowTop {
+  font-size:6rem;
+  height: 50px;
+  width: 60px;
+  color: white;
+  position: fixed;
+  right:10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#arrowTop::before {
+  content: '▲';
+}
